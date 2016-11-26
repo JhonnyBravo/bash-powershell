@@ -67,7 +67,7 @@ if [ $i_flag -eq 1 ]; then
   which sphinx-build
 
   if [ $? -ne 0 ]; then
-    provision_python_tools.sh -i
+    apt-get install python-sphinx
   fi
 
   (
